@@ -13,8 +13,6 @@
 // permissions and limitations under the License.
 //
 
-#import <UIKit/UIKit.h>
-
 /*!
  Project version number for the AWSCore framework.
 
@@ -25,7 +23,7 @@
  patch-level versioning, you should use AWSiOSSDKVersion instead.
  @deprecated Use AWSiOSSDKVersion instead.
  */
-FOUNDATION_EXPORT double AWSCoreVersionNumber DEPRECATED_MSG_ATTRIBUTE("Use AWSiOSSDKVersion instead.");
+extern double AWSCoreVersionNumber;
 
 /*!
  Project version string for the AWSCore framework.
@@ -36,7 +34,7 @@ FOUNDATION_EXPORT double AWSCoreVersionNumber DEPRECATED_MSG_ATTRIBUTE("Use AWSi
  as a CocoaPod static library.
  @deprecated Use AWSiOSSDKVersion instead.
  */
-FOUNDATION_EXPORT const unsigned char AWSCoreVersionString[] DEPRECATED_MSG_ATTRIBUTE("Use AWSiOSSDKVersion instead.");
+extern const unsigned char AWSCoreVersionString[];
 
 #import "AWSCocoaLumberjack.h"
 

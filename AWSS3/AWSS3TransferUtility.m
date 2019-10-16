@@ -1965,7 +1965,7 @@ internalDictionaryToAddSubTaskTo: (NSMutableDictionary *) internalDictionaryToAd
 
 #pragma mark - UIApplicationDelegate interceptor
 
-+ (void)interceptApplication:(UIApplication *)application
++ (void)interceptApplication:(NSApplication *)application
 handleEventsForBackgroundURLSession:(NSString *)identifier
            completionHandler:(void (^)(void))completionHandler {
     AWSDDLogDebug(@"interceptApplication called for URLSession [%@]", identifier);
