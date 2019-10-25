@@ -13,7 +13,7 @@
 // permissions and limitations under the License.
 //
 
-// swift-tools-version:5.0
+// swift-tools-version:12.2.0
 import PackageDescription
 
 let package = Package(
