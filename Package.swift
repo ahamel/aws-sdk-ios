@@ -17,15 +17,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftyJSON",
+    name: "AWS",
     platforms: [
         .macOS(.v10_15)
     ],
     products: [
-        .library(name: "AWSCore", targets: ["AWSCore"])
+        .library(name: "AWSCore", targets: ["AWSCore"]),
+        .library(name: "AWSGateway", targets: ["AWSGateway"]),
+        .library(name: "AWSIoT", targets: ["AWSIoT"])
     ],
     targets: [
-        .target(name: "AWSCore", dependencies: [])
+        .target(name: "AWSCore", dependencies: []),
+        .target(name: "AWSGateway", dependencies: []),
+        .target(name: "AWSIoT", dependencies: [])
     ],
     swiftLanguageVersions: [.v5]
 )
